@@ -1,0 +1,558 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+* {
+    font-family: 'AzoSans', sans-serif;
+}
+
+@font-face {
+    font-family: 'AzoSans';
+    font-weight: 100;
+    src: url('../fonts/AzoSans-Thin.otf');
+}
+
+@font-face {
+    font-family: 'AzoSans';
+    font-weight: 300;
+    src: url('../fonts/AzoSans-Light.otf');
+}
+
+@font-face {
+    font-family: 'AzoSans';
+    font-weight: 500;
+    src: url('../fonts/AzoSans-Regular.otf');
+}
+
+@font-face {
+    font-family: 'AzoSans';
+    font-weight: 700;
+    src: url('../fonts/AzoSans-Bold.otf');
+}
+
+body {
+    line-height: 1;
+    background-color: white;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clear:after {
+    clear: both;
+    content: '';
+}
+
+section {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+.header-box {
+    display: block;
+}
+
+.menu-box {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    z-index: 20;
+    padding-left: 5%;
+    width: 70%;
+}
+
+.account {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    z-index: 20;
+    padding-right: 5%;
+    width: 35%;
+    padding-top: 62px;
+}
+
+.menu-box p,
+.account p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.menu-box p {
+    color: white;
+}
+
+.account p {
+    color: black;
+    vertical-align: bottom;
+}
+
+.menu-item-logo {
+    text-align: left;
+    margin-right: 4%;
+    display: inline-block;
+}
+
+.menu-item {
+    text-align: left;
+    margin-right: 7%;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-bottom: 1%;
+}
+
+.menu-item2 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 2%;
+}
+
+.menu-item:last-child,
+.menu-item2:last-child {
+    margin-right: 0;
+}
+
+.heartRate {
+    animation-delay: 2s;
+    animation-iteration-count: 4;
+}
+
+.delay {
+    animation-delay: 0s;
+}
+
+.slider-banner {
+    display: block;
+    top: 0;
+    width: 100%;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: auto;
+    counter-increment: gallery-cell;
+}
+
+.slider-item1 {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.slider-item1 .tagline1 {
+    font-size: 50px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.slider-item1 .tagline2 {
+    font-size: 26px;
+    text-align: left;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.slider-item .slider-social-image {
+    position: absolute;
+    left: 4%;
+    top: 60%;
+    text-align: left;
+    z-index: 20;
+    height: auto;
+    width: 9%;
+}
+
+.slider-item .slider-image {
+    height: auto;
+    width: 100%;
+}
+
+.tab-effect {
+    text-indent: 44%;
+    display: block;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-reddish {
+    color: #DE514A;
+}
+
+.color-greenish {
+    color: #00a278;
+}
+
+.color-lillish {
+    color: #735E91;
+}
+
+.color-yellowish {
+    color: #F9C000;
+}
+
+.color-blueish {
+    color: #44BFFE;
+}
+
+.chatbot {
+    position: fixed;
+    right: 0;
+    top: 65%;
+    text-align: right;
+    z-index: 99;
+}
+
+.chatbot .vertical-tab {
+    height: auto;
+    width: 75%;
+}
+
+form {
+    padding: 4% 28% 0 28%;
+    display: block;
+    height: auto;
+    position: relative;
+}
+
+.offers {
+    padding: 2% 11%;
+    display: block;
+    height: auto;
+    position: relative;
+}
+
+.offers-wrapper {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+}
+
+.offers-wrapper img {
+    width: 80%;
+    height: auto;
+}
+
+.offers-single-section {
+    vertical-align: top;
+    margin-top: 50px;
+    display: inline-block;
+    width: 23%;
+    margin-right: 2%;
+}
+
+.offers-single-section-more {
+    vertical-align: top;
+    margin-top: 10px;
+    display: inline-block;
+    width: 23%;
+    margin-right: 2%;
+}
+
+.offers-single-section-more a {
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+.offers-single-section:last-child {
+    margin-right: 0;
+}
+
+.offers-single-section-more:last-child {
+    margin-right: 0;
+}
+
+.offers-wrapper h1 {
+    color: black;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 36px;
+}
+
+.offers-wrapper h2 {
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.offers-wrapper p {
+    color: black;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;
+    display: block;
+    line-height: 18px;
+}
+
+.offers-single p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.offers-single {
+    height: auto;
+    margin: 10px;
+    line-height: 24px;
+    display: block;
+}
+
+.linkToMore {
+    color: #d8d8d8;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    vertical-align: bottom;
+}
+
+.pointer_direction {
+    display: block;
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 45px;
+}
+
+.zu-newsletter {
+    margin-top: 30px;
+    position: relative;
+}
+
+.zu-newsletter {
+    background-color: #d8d8d8;
+}
+
+.zu-newsletter-wrapper {
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.newsletter-item p.tagline1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+.newsletter-item p.tagline2 {
+    font-size: 16px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 0;
+    line-height: 24px;
+}
+
+.form-group-lg .form-control {
+    font-size: 16px;
+    font-style: italic;
+}
+
+form .input-group-addon {
+    background-color: #00a278;
+    color: white;
+    border: 6px solid white;
+    box-sizing: border-box;
+}
+
+.form-control,
+.form-group button,
+form input.form-control,
+form textarea.form-control,
+form select.form-control {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+form input.form-control {
+    -webkit-border-radius: 0 !important;
+}
+
+.social-tags-wrapper img {
+    height: auto;
+    width: 100%;
+    margin-top: 60px;
+}
+
+footer {
+    background-color: #d8d8d8;
+}
+
+.menu-box-footer {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+.menu-item-footer {
+    margin-right: 3%;
+    display: inline-block;
+}
+
+.menu-item-footer p {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menu-item-footer:last-child {
+    margin-right: 0;
+}
+
+.social-box-footer {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.social-item-footer p.tagline1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.social-item-footer h4.tagline2 {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.social-box-footer img {
+    vertical-align: bottom;
+    padding-bottom: 1%;
+}
+
+.footer-wrapper {
+    text-align: center;
+}
+
+.footer-wrapper h4 {
+    font-size: 12px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}

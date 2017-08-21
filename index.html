@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    <!-- for carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- for carousel -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <title>ZU</title>
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="main-section-wrapper">
+            <div class="background-image">
+                <img class="logoimage animated pulse desktop" src="assets/zu_principal.png">
+                <img class="desktop" src="assets/header_landing.png" border="0" />
+                <img class="mobile" src="assets_mobile/header_landing_mobile.png" border="0" />
+                <div class="title-box">
+                    <div class="title animated pulse">Somos
+                        <p class="heartRate animated pulse zu_line">ZUumanos</p>,
+                        <br>apaixonados por animais.
+                        <br>Junta-te a nós!
+                    </div>
+                    <div class="subtitle2 desktop">Registe-se e receba 20% de desconto em toda a loja,
+                        <br> e outras surpresas ao longo do nosso relacionamento.
+                    </div>
+                    <form method="post" class="animated pulse">
+                        <div class="form-group form-subbox mobile_format">
+                            <label class="control-label " for="name">Email</label>
+                            <input class="form-control" id="name" name="name" type="text" />
+                        </div>
+
+                        <div class="form-subbox">
+                            <div class="form-group form-subboxinline form-subbox-colum-fst mobile_format">
+                                <label class="control-label " for="email">Nome do animal</label>
+                                <input class="form-control" id="email" name="email" type="text" />
+                            </div>
+
+                            <div class="form-group form-subboxinline form-subbox-colum-snd mobile_format">
+                                <div class="radio-inline a-selector" onclick="RadioClicked('cao', 'gato')">
+                                    <input name="pet1" type="radio" value="Cão" id="cao" />
+                                    <label class="control-label2 paw-a" for="cao">Cão
+                                        <img id="img-cao" src="assets/pata_no_seleccao.png">
+                                    </label>
+                                </div>
+                                <div class="radio-inline a-selector" onclick="RadioClicked('gato','cao')">
+                                    <input name="pet2" type="radio" value="Gato" id="gato" />
+                                    <label class="control-label2 paw-a" for="gato">Gato
+                                        <img id="img-gato" src="assets/pata_no_seleccao.png">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-subbox mobile_format">
+                            <div class="form-group form-subboxinline form-subbox-colum-fst mobile_format_13col">
+                                <label class="control-label " for="number">Idade</label>
+                                <input class="form-control" id="number" name="number" type="text" />
+                            </div>
+                            <div class="form-group form-subboxinline form-subbox-colum-snd2 mobile_format_23col">
+                                <label class="control-label" for="name1">Raça</label>
+                                <input class="form-control" id="name1" name="name1" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group form-subbox butao">
+                            <!--button class="btn btn-custom btn-lg" name="enviar" type="submit">ENVIAR</button-->
+                            <a href="home.html" class="btn btn-custom btn-lg" role="button">ENVIAR</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="offers clear desktop">
+        <div class="offers-wrapper clear">
+            <h1 class="animated Bounce">Os nossos valores</h1>
+            <ul class="offers-single-section clear values_mobile1">
+                <li><img src="assets/icons_landing-08.svg" border="0" /></li>
+                <li class="offers-single animated slideInLeft">
+                    <h2>FAMÍLIA ZU</h2>
+                </li>
+                <li class="offers-single">
+                    <p>Somos apaixonados por animais e estamos preparados para os acolher a qualquer momento. <br>Conheça e faça parte da nossa Família.</p>
+                </li>
+            </ul>
+            <ul class="offers-single-section clear values_mobile2">
+                <li><img src="assets/icons_landing-07.svg" border="0" /></span>
+                </li>
+                <li class="offers-single animated slideInLeft">
+                    <h2>PARCERIAS</h2>
+                </li>
+                <li class="offers-single">
+                    <p>Somos uma referência especializada em cães e gatos. Contamos com parceiros de excelência, veterinários credenciados, treinadores profissionais e staff experiente.</p>
+                </li>
+            </ul>
+            <ul class="offers-single-section clear values_mobile2">
+                <li><img src="assets/icons_landing-09.svg" border="0" /></span>
+                </li>
+                <li class="offers-single animated slideInRight">
+                    <h2>#PARTILHA</h2>
+                </li>
+                <li class="offers-single">
+                    <p>Na Família ZU partilhamos os melhores momentos e criamos relações que nos transformam.
+                        <br>Essa é a nossa motivação.
+                    </p>
+                </li>
+            </ul>
+            <ul class="offers-single-section clear values_mobile2">
+                <li><img src="assets/icons_landing-06.svg" border="0" /></span>
+                </li>
+                <li class="offers-single animated slideInRight">
+                    <h2>RESPONSABILIDADE SOCIAL</h2>
+                </li>
+                <li class="offers-single">
+                    <p>Conhece o Zulo e a Zoé? São os nossos embaixadores da Adoção Responsável.
+                        <br>Adote um animal e partilhe as melhores emoções.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="offers clear mobile">
+        <div class="deliverLine animated slideInDown">
+            <p>Registe-se e receba 20% de desconto em toda a loja, e outras surpresas ao longo do nosso relacionamento.</p>
+        </div>
+        <div class="offers-wrapper">
+            <h1 class="animated Bounce">Os nossos valores</h1>
+            <div class="main-carousel" data-flickity>
+                <div class="carousel-cell">
+                    <ul class="offers-single-section values_mobile1">
+                        <li><img src="assets/icons_landing-08.svg" border="0" /></li>
+                        <li class="offers-single animated slideInLeft">
+                            <h2>FAMÍLIA ZU</h2>
+                        </li>
+                        <li class="offers-single">
+                            <p>Somos apaixonados por animais e estamos preparados para os acolher a qualquer momento. <br>Conheça e faça parte da nossa Família.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel-cell">
+                    <ul class="offers-single-section values_mobile1 carousel-cell">
+                        <li><img src="assets/icons_landing-07.svg" border="0" /></li>
+                        <li class="offers-single animated slideInLeft">
+                            <h2>PARCERIAS</h2>
+                        </li>
+                        <li class="offers-single">
+                            <p>Somos uma referência especializada em cães e gatos. Contamos com parceiros de excelência, veterinários credenciados, treinadores profissionais e staff experiente.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel-cell">
+                    <ul class="offers-single-section values_mobile1 carousel-cell">
+                        <li><img src="assets/icons_landing-09.svg" border="0" /></li>
+                        <li class="offers-single animated slideInRight">
+                            <h2>#PARTILHA</h2>
+                        </li>
+                        <li class="offers-single">
+                            <p>Na Família ZU partilhamos os melhores momentos e criamos relações que nos transformam.
+                                <br>Essa é a nossa motivação.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel-cell">
+                    <ul class="offers-single-section values_mobile1 carousel-cell">
+                        <li><img src="assets/icons_landing-06.svg" border="0" /></li>
+                        <li class="offers-single animated slideInRight">
+                            <h2>RESPONSABILIDADE SOCIAL</h2>
+                        </li>
+                        <li class="offers-single">
+                            <p>Conhece o Zulo e a Zoé? São os nossos embaixadores da Adoção Responsável.
+                                <br>Adote um animal e partilhe as melhores emoções.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pointer_direction desktop">
+            <i class="fa fa-angle-down animated slideInDown"></i>
+        </div>
+    </section>
+
+    <section class="social-media">
+        <div class="social-media-wrapper">
+            <h1 class="animated infinite pulse">Segue-nos</h1>
+            <img src="assets/social.png">
+        </div>
+    </section>
+
+    <section class="social-tags">
+        <div class="social-tags-wrapper">
+            <img class="desktop" src="assets/zuumanos.png">
+            <img class="mobile" src="assets_mobile/zuumanos_mobile.png">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <h4>© 2017 ZU - Marca Registada Sonae MC</h4>
+        </div>
+    </footer>
+</body>
+
+<script type="text/javascript">
+    var RadioCheckedImage = new Image();
+    var RadioUncheckedImage = new Image();
+
+    RadioCheckedImage.src = "assets/pata_seleccao.png";
+    RadioUncheckedImage.src = "assets/pata_no_seleccao.png";
+
+    function RadioClicked(radioid, radioid2) {
+        if (document.getElementById(radioid).checked) {
+            document.getElementById("img-" + radioid).src = RadioCheckedImage.src;
+            document.getElementById("img-" + radioid2).src = RadioUncheckedImage.src;
+        }
+    }
+</script>
+
+</html>
